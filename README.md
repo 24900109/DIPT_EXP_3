@@ -36,7 +36,7 @@ The program performs the following operations:
 Import the required libraries: OpenCV, NumPy, and Matplotlib.
 
 ### Step 2:
-Read the image `parrot.jpg` in grayscale format.
+Read the image `tulip.jpg` in grayscale format.
 
 ### Step 3:
 Display the grayscale image and plot its histogram.
@@ -77,7 +77,7 @@ Display original color image, histogram, enhanced image, and enhanced histogram 
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-img = cv2.imread('parrot.jpg',cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('tulip.jpg',cv2.IMREAD_GRAYSCALE)
 plt.imshow(img, cmap='gray')
 plt.title('original_image')
 plt.show()
@@ -98,7 +98,7 @@ plt.title('original image')
 plt.show()
 ```
 ```python
-img = cv2.imread('parrot.jpg', cv2.IMREAD_COLOR)
+img = cv2.imread('tulip.jpg', cv2.IMREAD_COLOR)
 img_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 img_hsv[:,:,2] = cv2.equalizeHist(img_hsv[:, :, 2])
 img_eq = cv2.cvtColor(img_hsv, cv2.COLOR_HSV2BGR)
@@ -115,22 +115,28 @@ plt.subplot(224); plt.hist(img_eq.ravel(),256,range = [0, 256]); plt.title('Hist
 ##  Output:
 
 ### ORIGINAL IMAGE:
-<img width="786" height="492" alt="image" src="https://github.com/user-attachments/assets/1e5a8475-714f-4751-a689-8cdd99baad1e" />
+<img width="716" height="436" alt="1" src="https://github.com/user-attachments/assets/b764e474-fa25-490c-b428-df1b269e81a3" />
 
-<img width="839" height="545" alt="image" src="https://github.com/user-attachments/assets/826e4b36-a591-4f65-8130-21d2cec76059" />
+
+<img width="777" height="545" alt="2" src="https://github.com/user-attachments/assets/39564505-1393-4791-8e48-1f7f605533c1" />
+
 
 
 ### Equalised Histogram:
 
-<img width="873" height="548" alt="image" src="https://github.com/user-attachments/assets/4126ae0f-55dd-4658-9ba2-20dec279d6dc" />
+<img width="752" height="587" alt="3" src="https://github.com/user-attachments/assets/60208554-9495-4c93-997b-755065e4f924" />
 
-<img width="962" height="511" alt="image" src="https://github.com/user-attachments/assets/b910bbe6-d4e3-4887-b2c0-04fa2a8ae9af" />
+
+<img width="720" height="445" alt="4" src="https://github.com/user-attachments/assets/8ab4022c-3ca6-4409-83b9-405e3420b226" />
+
 
 ### Histogram of any channel of Color Image:
-<img width="787" height="272" alt="image" src="https://github.com/user-attachments/assets/1b97f53a-e1da-44c2-b285-6c897b340f50" />
+<img width="717" height="277" alt="5" src="https://github.com/user-attachments/assets/d4db5f63-55c5-4806-a646-f1ccebf3cb62" />
+
 
 ### Histogram Equalization of Color Image:
-<img width="1321" height="534" alt="image" src="https://github.com/user-attachments/assets/b8abe0bf-f37c-496e-a361-81ede475843e" />
+<img width="1300" height="587" alt="7" src="https://github.com/user-attachments/assets/d9121ec8-32a7-42ad-8333-5d187b2ef211" />
+
 
 
 
